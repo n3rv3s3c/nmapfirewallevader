@@ -1,0 +1,10 @@
+import nmap
+
+# Create an instance of the nmap.PortScanner class
+nm = nmap.PortScanner()
+
+# Perform the scan the IP is a test ip
+nm.scan(hosts='192.168.1.1', arguments='-sS -f') 
+
+# Print the results
+print(nm.all_hosts())
